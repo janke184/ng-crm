@@ -1,1 +1,110 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
+
+
+
+
+body {
+  background-color: #303030;
+  xxxxmargin: 0px;
+}
+
+.mat-card {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+.mat-card-padding {
+  padding: 15px;
+ }
+ 
+.mat-card-container {
+  display: flex;
+  flex-direction: column;
+}
+  
+.mat-card-container > * {
+  width: 100%;
+}
+
+
+/* Large */
+.mynavigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  background-color: #E0E0E0;
+}
+
+/* Medium screens */
+@media all and (max-width: 800px) {
+  .mynavigation {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: flex-startng;
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  .mynavigation {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+
+.filler {
+  flex: 1 1 auto;
+}
+
+.max-width{
+  width: 100%; 
+}
+
+.flex-horizontal-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-horizontal-end{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.no-hidden 
+{
+  position: fixed !important;
+  bottom: 10px;
+  right: 10px;
+  visibility: visible;
+}
+
+.fixed-bottom-right-container
+{
+  position: fixed !important;
+  bottom: 10px;
+  right: 7px;
+}
+
+.fixed-top-right-container
+{
+  position: fixed !important;
+  top: 115px;
+  right: 7px;
+}
+
+.content-margin {
+  margin: 7px;
+}
+
+.content-padding {
+  padding: 7px;
+}
+
+.line-break{
+  white-space: pre-line;
+}
+
+[hidden] {
+  display: none !important;
+}

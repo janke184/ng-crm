@@ -1,0 +1,11 @@
+{
+    "general": {
+        "title": "NgCRM"
+    }
+    ,"login": {
+        "title": "Ingresar",
+        "email": "Email",
+        "password": "Password",
+        "submit": "Login"
+    }
+}

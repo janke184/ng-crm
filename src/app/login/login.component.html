@@ -1,0 +1,31 @@
+<!-- container with component css class login-box -->
+<div class="login-box">
+
+    <mat-card >
+
+        <form name="myform" [formGroup]="loginForm">
+
+            <mat-card-content class="login-form">
+
+                <mat-card-title>
+                    <h1>{{ 'login.title' | translate }}</h1>
+                </mat-card-title>
+
+                <mat-form-field>
+                    <input matInput placeholder="Email" type="email" formControlName="username" required>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input matInput placeholder="Password" type="password" formControlName="password" required>
+                </mat-form-field>
+
+                <button mat-raised-button color="primary" (click)="submit()">Login</button>
+
+                
+            </mat-card-content>
+
+        </form>
+
+    </mat-card>
+
+</div>
